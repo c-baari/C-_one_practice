@@ -1,78 +1,56 @@
-# Student Information Form
+# Discourse chapter 1
+# Week 1 - C# String Concatenation Practice
 
-## Description
+## Overview
 
-This project is a simple **Student Information Form** created using **C# and Windows Forms**.
+This practice demonstrates how to:
 
-The application allows the user to enter basic student information and display it on the form.
+- Create string variables
+- Combine two string values
+- Store the combined value in another variable
+- Display the result using a Label control
 
-## Features
+---
 
-- Enter student name
-- Enter student ID
-- Enter department
-- Enter semester
-- Display the entered student information
-- Clear all input fields
-- Exit the application
+## 1. Creating Variables
 
-## Technologies Used
+In this step, three string variables are created to store the user's name information:
 
-- C#
-- .NET
-- Windows Forms
-- Visual Studio
+- `FirstName` - stores the first name
+- `SecondName` - stores the second name
+- `FullName` - stores the complete name after combining the first and second names.
 
-## Form Controls
+The following screenshot shows how the variables are declared in C#.
 
-| Control | Name | Purpose |
-|---|---|---|
-| Label | `lblname` | Student name label |
-| TextBox | `txtname` | Enter student name |
-| Label | `lblstudentid` | Student ID label |
-| TextBox | `txtstudentid` | Enter student ID |
-| Label | `lbldepartment` | Department label |
-| TextBox | `txtdepartment` | Enter department |
-| Label | `lblsemester` | Semester label |
-| TextBox | `txtsemester` | Enter semester |
-| Label | `lbloutput` | Display student information |
-| Button | `btnshowinfo` | Show student information |
-| Button | `btnclear` | Clear all fields |
-| Button | `btnexit` | Exit the application |
+![Creating Variables](Screenshots/Creating_Variables.png)
 
-## How It Works
+```csharp
+string FirstName, SecondName, FullName;
 
-### Show Information
-The **Show Information** button collects the information entered in the text boxes and displays it in the output area.
+```
 
-### Clear
-The **Clear** button removes all entered information from the form.
+---
 
-### Exit
-The **Exit** button closes the application.
+## 2. Concatenating the First Name and Second Name
 
-## How to Run
+In this step, the first name and second name are combined using the `+` operator.
 
-1. Open the project in **Visual Studio**.
-2. Open the Windows Forms project.
-3. Build the project.
-4. Run the application using **Start** or `F5`.
-5. Enter the student information.
-6. Click **Show Information**.
+A space `" "` is added between the two names so that the final result is displayed correctly.
 
-## User Interface
+The result is stored in the `FullName` variable.
 
-The form contains fields for:
+The following screenshot shows the string concatenation process.
 
-- Student Name
-- Student ID
-- Department
-- Semester
+---
 
-It also contains **Show Information**, **Clear**, and **Exit** buttons.
+## 3. Displaying the Full Name
 
-## 👨Author
+After the first name and second name are combined, the value stored in `FullName` is displayed in a Label control.
 
-**Student Information Form Assignment**
+The `.Text` property of the label is used to show the result on the Windows Form.
 
-Created as a C# Windows Forms programming assignment.
+The following screenshot shows how the full name is displayed.
+
+```
+
+```
