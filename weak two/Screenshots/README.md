@@ -1,4 +1,5 @@
 ### Screenshot one
+
 ## String variable in a Message Box:
 This code runs when **Button 1** is clicked and displays `"Jamhuuriya University"` in `textBox2`.
 
@@ -27,6 +28,7 @@ When **Btndisplay** is clicked:
 Jamhuuriya University
 ```
 
+
 ### Screenshot two
 
 ## # C# String Concatenation
@@ -54,6 +56,7 @@ MessageBox.Show(messsage);
 Jamhuuriyа University
 ```
 
+
 ### Screenshot three
 
 ## Explicit Conversion
@@ -78,7 +81,9 @@ number1 = 10
 number2 = 10.0
 ```
 
+
 ### Screenshot four
+
 
 # C# Integer Division
 
@@ -101,7 +106,39 @@ MessageBox.Show((x / y).ToString());
 ```text
 2
 ```
-### Screenshot four
+
+
+### Screenshot five
+
+# C# Try-Catch Example
+
+This code uses `try-catch` to safely convert text from a TextBox into an integer.
+
+```csharp
+try
+{
+    int number = int.Parse(txtshow.Text);
+    MessageBox.Show(number.ToString());
+}
+catch
+{
+    MessageBox.Show("Please enter a valid number.");
+}
+```
+
+### How It Works
+
+* `try` → Attempts to execute the code.
+* `txtshow.Text` → Gets the text entered in the TextBox.
+* `int.Parse()` → Converts the text into an integer.
+* `MessageBox.Show()` → Displays the number.
+* `catch` → Handles the error if the input is not a valid integer.
+
+### Example
+
+**Input:** `25` → Displays `25`
+
+**Input:** `abc` → Displays `Please enter a valid number.`
 
 
 
