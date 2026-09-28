@@ -1,14 +1,14 @@
 # C# Chapter 2 — Processing Data
 
 ## Topics:
-  2.1 Reading Input with TextBox Controls
-  2.2 A First Look at Variables
-  2.3 Numeric Data Type and Variables
-  2.4 Performing Calculations
-  2.5 Inputting and Outputting Numeric Values
-  2.6 Formatting Numbers with the ToString Method
-  2.7 Simple Exception Handling
-  2.8 Using Named Constants
+  # 2.1 Reading Input with TextBox Controls
+  # 2.2 A First Look at Variables
+  # 2.3 Numeric Data Type and Variables
+  # 2.4 Performing Calculations
+  # 2.5 Inputting and Outputting Numeric Values
+  # 2.6 Formatting Numbers with the ToString Method
+  # 2.7 Simple Exception Handling
+  # 2.8 Using Named Constants
 
 ### 2.1 Reading Input with TextBox Controls
 * Understand TextBox controls.
