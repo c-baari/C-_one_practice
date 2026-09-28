@@ -15,7 +15,13 @@
 * Assign values to variables.
 * Understand variable names and data types.
 * Change the value stored in a variable.
+ 
+* Assignment Compatibility. 
+* You can assign a value to a variable only if the value is compatible   with the variable’s data type.
+* Only strings are compatible with the string data type
 
+ 
+ 
 ### 2.3 Numeric Data Types and Variables
 
 Learn the main numeric data types:
@@ -111,7 +117,7 @@ A constant's value cannot be changed after it is declared.
 
 ---
 
-# Important Exam Traps
+# 
 
 * `TextBox.Text` returns a **string**.
 * A number typed into a TextBox is still received as a **string**.
@@ -129,32 +135,5 @@ A constant's value cannot be changed after it is declared.
 * A `const` value cannot be changed after declaration.
 * Know the difference between declaring, initializing, and assigning a variable.
 
----
-
-# Study Order
-
-1. 2.1 Reading Input with TextBox Controls
-2. 2.2 A First Look at Variables
-3. 2.3 Numeric Data Types and Variables
-4. 2.4 Performing Calculations
-5. 2.5 Inputting and Outputting Numeric Values
-6. 2.6 Formatting Numbers with the ToString Method
-7. 2.7 Simple Exception Handling
-8. 2.8 Using Named Constants
-9. Chapter 2 Review
-10. Chapter 2 Exam
 
 ---
-
-# Chapter 2 Goal
-
-By the end of this chapter, I should be able to create C# programs that:
-
-* Receive input from the user.
-* Store information in variables.
-* Use appropriate numeric data types.
-* Perform calculations.
-* Convert text input into numbers.
-* Display and format numeric results.
-* Handle simple input errors.
-* Use named constants in calculations.
