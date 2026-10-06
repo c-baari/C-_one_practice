@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\test_score_average\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB95259-1624-44FA-A918-E958A347BFD2}|test_score_average\\test_score_average.csproj|c:\\users\\hp\\desktop\\lectures\\semester-5\\c# programming 1\\c# projects\\test_score_average\\test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EB95259-1624-44FA-A918-E958A347BFD2}|test_score_average\\test_score_average.csproj|solutionrelative:test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB95259-1624-44FA-A918-E958A347BFD2}|test_score_average\\test_score_average.csproj|C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\test_score_average\\test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9EB95259-1624-44FA-A918-E958A347BFD2}|test_score_average\\test_score_average.csproj|solutionrelative:test_score_average\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\test_score_average\\test_score_average\\Form1.cs",
+              "RelativeDocumentMoniker": "test_score_average\\Form1.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\test_score_average\\test_score_average\\Form1.cs",
+              "RelativeToolTip": "test_score_average\\Form1.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAawFIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T02:34:20.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\test_score_average\\test_score_average\\Form1.cs",
+              "RelativeDocumentMoniker": "test_score_average\\Form1.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\test_score_average\\test_score_average\\Form1.cs [Design]",
+              "RelativeToolTip": "test_score_average\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T02:18:38.479Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
