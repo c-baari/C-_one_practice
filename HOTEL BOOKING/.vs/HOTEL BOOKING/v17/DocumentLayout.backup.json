@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\HOTEL BOOKING\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{793E24C4-52D7-4EF9-B756-D74DC86E5EDB}|HOTEL BOOKING\\HOTEL BOOKING.csproj|c:\\users\\hp\\desktop\\lectures\\semester-5\\c# programming 1\\c# projects\\hotel booking\\hotel booking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{793E24C4-52D7-4EF9-B756-D74DC86E5EDB}|HOTEL BOOKING\\HOTEL BOOKING.csproj|solutionrelative:hotel booking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{793E24C4-52D7-4EF9-B756-D74DC86E5EDB}|HOTEL BOOKING\\HOTEL BOOKING.csproj|c:\\users\\hp\\desktop\\lectures\\semester-5\\c# programming 1\\c# projects\\hotel booking\\hotel booking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{793E24C4-52D7-4EF9-B756-D74DC86E5EDB}|HOTEL BOOKING\\HOTEL BOOKING.csproj|solutionrelative:hotel booking\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\HOTEL BOOKING\\HOTEL BOOKING\\Form1.cs",
+              "RelativeDocumentMoniker": "HOTEL BOOKING\\Form1.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\HOTEL BOOKING\\HOTEL BOOKING\\Form1.cs*",
+              "RelativeToolTip": "HOTEL BOOKING\\Form1.cs*",
+              "ViewState": "AgIAANwAAAAAAAAAAAAmwOQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T15:19:08.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\HOTEL BOOKING\\HOTEL BOOKING\\Form1.cs",
+              "RelativeDocumentMoniker": "HOTEL BOOKING\\Form1.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Lectures\\Semester-5\\C# programming 1\\C# Projects\\HOTEL BOOKING\\HOTEL BOOKING\\Form1.cs [Design]*",
+              "RelativeToolTip": "HOTEL BOOKING\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-19T14:54:30.151Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
