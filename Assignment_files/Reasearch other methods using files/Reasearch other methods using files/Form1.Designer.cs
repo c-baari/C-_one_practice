@@ -34,6 +34,7 @@
             this.listBox_items_from_thefile = new System.Windows.Forms.ListBox();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btncreating = new System.Windows.Forms.Button();
             this.btn_readlines = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -41,9 +42,9 @@
             // btn_readalllines
             // 
             this.btn_readalllines.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_readalllines.Location = new System.Drawing.Point(67, 44);
+            this.btn_readalllines.Location = new System.Drawing.Point(20, 133);
             this.btn_readalllines.Name = "btn_readalllines";
-            this.btn_readalllines.Size = new System.Drawing.Size(264, 54);
+            this.btn_readalllines.Size = new System.Drawing.Size(396, 54);
             this.btn_readalllines.TabIndex = 0;
             this.btn_readalllines.Text = "ReadAllLines";
             this.btn_readalllines.UseVisualStyleBackColor = true;
@@ -52,7 +53,7 @@
             // btn_deletefile
             // 
             this.btn_deletefile.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deletefile.Location = new System.Drawing.Point(92, 237);
+            this.btn_deletefile.Location = new System.Drawing.Point(83, 362);
             this.btn_deletefile.Name = "btn_deletefile";
             this.btn_deletefile.Size = new System.Drawing.Size(238, 67);
             this.btn_deletefile.TabIndex = 1;
@@ -63,9 +64,9 @@
             // btn_deleteitem
             // 
             this.btn_deleteitem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deleteitem.Location = new System.Drawing.Point(67, 164);
+            this.btn_deleteitem.Location = new System.Drawing.Point(23, 294);
             this.btn_deleteitem.Name = "btn_deleteitem";
-            this.btn_deleteitem.Size = new System.Drawing.Size(272, 58);
+            this.btn_deleteitem.Size = new System.Drawing.Size(390, 58);
             this.btn_deleteitem.TabIndex = 2;
             this.btn_deleteitem.Text = "Delete items in the file";
             this.btn_deleteitem.UseVisualStyleBackColor = true;
@@ -75,15 +76,15 @@
             // 
             this.listBox_items_from_thefile.FormattingEnabled = true;
             this.listBox_items_from_thefile.ItemHeight = 20;
-            this.listBox_items_from_thefile.Location = new System.Drawing.Point(677, 12);
+            this.listBox_items_from_thefile.Location = new System.Drawing.Point(500, 12);
             this.listBox_items_from_thefile.Name = "listBox_items_from_thefile";
-            this.listBox_items_from_thefile.Size = new System.Drawing.Size(316, 444);
+            this.listBox_items_from_thefile.Size = new System.Drawing.Size(493, 464);
             this.listBox_items_from_thefile.TabIndex = 3;
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(126, 414);
+            this.button4.Location = new System.Drawing.Point(117, 498);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(213, 83);
             this.button4.TabIndex = 4;
@@ -93,7 +94,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.btncreating);
             this.groupBox1.Controls.Add(this.btn_readlines);
             this.groupBox1.Controls.Add(this.btn_deleteitem);
             this.groupBox1.Controls.Add(this.btn_readalllines);
@@ -101,17 +103,29 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(34, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(440, 370);
+            this.groupBox1.Size = new System.Drawing.Size(440, 480);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Reasearch Functions";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btncreating
+            // 
+            this.btncreating.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncreating.Location = new System.Drawing.Point(23, 60);
+            this.btncreating.Name = "btncreating";
+            this.btncreating.Size = new System.Drawing.Size(390, 54);
+            this.btncreating.TabIndex = 7;
+            this.btncreating.Text = "create";
+            this.btncreating.UseVisualStyleBackColor = true;
+            this.btncreating.Click += new System.EventHandler(this.btncreating_Click);
             // 
             // btn_readlines
             // 
             this.btn_readlines.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_readlines.Location = new System.Drawing.Point(67, 104);
+            this.btn_readlines.Location = new System.Drawing.Point(23, 220);
             this.btn_readlines.Name = "btn_readlines";
-            this.btn_readlines.Size = new System.Drawing.Size(264, 54);
+            this.btn_readlines.Size = new System.Drawing.Size(390, 54);
             this.btn_readlines.TabIndex = 6;
             this.btn_readlines.Text = "ReadLines";
             this.btn_readlines.UseVisualStyleBackColor = true;
@@ -141,6 +155,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_readlines;
+        private System.Windows.Forms.Button btncreating;
     }
 }
 

@@ -1,173 +1,158 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;  
+using System.Windows.Forms;
 
 namespace Reasearch_other_methods_using_files
 {
     public partial class Form1 : Form
     {
+        // File path
+        private string filePath = Path.Combine(
+            Application.StartupPath, "home.txt");
+
         public Form1()
         {
             InitializeComponent();
         }
 
+        // Create file and write text inside it
+        private void btncreating_Click(object sender, EventArgs e)
+        {
+            using (StreamWriter writer = new StreamWriter(filePath, false))
+            {
+                writer.WriteLine("Welcome to C# File Handling");
+                writer.WriteLine("This is the first line in the file.");
+                writer.WriteLine("This is the second line in the file.");
+                writer.WriteLine("We are using WriteLine() method.");
+            }
+
+            MessageBox.Show("File created and text written successfully!");
+        }
+
+        // Read file using StreamReader
         private void button4_Click(object sender, EventArgs e)
         {
-            //import class
-            StreamReader read_existfile;
-            //1.open the file-read the file using open text
-            read_existfile = File.OpenText("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt");
-            //2.process
-            String lines;
-            while (read_existfile.EndOfStream == false)
+            if (File.Exists(filePath))
             {
-                lines = read_existfile.ReadLine();
-                listBox_items_from_thefile.Items.Add(lines);
+                listBox_items_from_thefile.Items.Clear();
 
+                using (StreamReader reader = new StreamReader(filePath))
+                {
+                    string line;
+
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        listBox_items_from_thefile.Items.Add(line);
+                    }
+                }
             }
-            //3 close function
-            read_existfile.Close();
-
-
-
+            else
+            {
+                MessageBox.Show("File not found. Please create the file first.");
+            }
         }
 
+        // Read file using ReadAllLines()
         private void button1_Click(object sender, EventArgs e)
         {
-            //using readallLines method
-            //wuxuu sameenaa dhamaan lines ka ku keydinaa array ka hor inta aan lasoo bandhigin
-            String[] lines;
-            //validation wye path ka aa mesha soo galise inuu jiro iyo in kale la hubinaa
-            if (File.Exists("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt"))
+            if (File.Exists(filePath))
             {
-                //files ka xogta ku jirta oo dhan soo aqrinaa
-                lines = File.ReadAllLines("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt");
+                listBox_items_from_thefile.Items.Clear();
+
+                string[] lines = File.ReadAllLines(filePath);
+
                 listBox_items_from_thefile.Items.AddRange(lines);
-
-                //addrange -means wuxuu line kasta u gelinayaa lixtbox ga item gooni ah
-                //f.g - hadaa dhahid items.add(means arrayga oo dhan aa hal item ahaan ugu dartay list box ga) waxa kusp baxeso string[]
-
             }
             else
             {
-                MessageBox.Show("file not found");
+                MessageBox.Show("File not found. Please create the file first.");
             }
-
         }
 
+        // Read file using ReadLines()
         private void btn_readlines_Click(object sender, EventArgs e)
         {
-            if (File.Exists("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt"))
+            if (File.Exists(filePath))
             {
-                //foreach waxay file ka xogta ku jirta u aqrieysaan line kasta si taxane ah
-                foreach (string line in File.ReadLines("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt"))
+                listBox_items_from_thefile.Items.Clear();
+
+                foreach (string line in File.ReadLines(filePath))
                 {
                     listBox_items_from_thefile.Items.Add(line);
-
                 }
-
             }
             else
             {
-                MessageBox.Show("path not found");
-
+                MessageBox.Show("File not found. Please create the file first.");
             }
         }
 
+        // Delete selected item from file
         private void btn_deleteitem_Click(object sender, EventArgs e)
         {
-            if (File.Exists("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt"))
+            if (!File.Exists(filePath))
             {
-                if (listBox_items_from_thefile.SelectedItem != null)
+                MessageBox.Show("File not found.");
+                return;
+            }
 
-                {
-                    string selectedItem = listBox_items_from_thefile.SelectedItem.ToString();
+            if (listBox_items_from_thefile.SelectedItem == null)
+            {
+                MessageBox.Show("Please select an item to delete.");
+                return;
+            }
 
-                    var lines = File.ReadAllLines("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt").ToList();
+            string selectedItem =
+                listBox_items_from_thefile.SelectedItem.ToString();
 
-                    if (lines.Remove(selectedItem))
+            List<string> lines = File.ReadAllLines(filePath).ToList();
 
-                    {
-                        File.WriteAllLines("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt", lines);
+            if (lines.Remove(selectedItem))
+            {
+                File.WriteAllLines(filePath, lines);
 
-                        listBox_items_from_thefile.Items.Remove(selectedItem);
+                listBox_items_from_thefile.Items.Remove(
+                    listBox_items_from_thefile.SelectedItem);
 
-                        MessageBox.Show("Item deleted successfully.");
-                    }
-
-                    else
-
-                    {
-                        MessageBox.Show("Item not found in the file.");
-                    }
-                }
-
-                else
-
-                {
-
-                    MessageBox.Show("Please select an item to delete.");
-
-
-                }
+                MessageBox.Show("Item deleted successfully.");
             }
             else
             {
-                MessageBox.Show("path  not found");
+                MessageBox.Show("Item not found in the file.");
             }
         }
 
+        // Delete the entire file
         private void btn_deletefile_Click(object sender, EventArgs e)
         {
-
-            if (File.Exists("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt"))
-
+            if (!File.Exists(filePath))
             {
-                //qaabkaan fudud waa ku delete di karaa lkn kan butonka hadaba taabatid hore uu ka delete garenaa
-
-                //File.Delete("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt");
-                //MessageBox.Show("file deleted suucesfuly");
-
-
-
-                //kan jaanis wuxuu kusiinaa yes iyo no ah sabato ah fartaa kaaga dhici karto adoo  rabin file ka inaa delete gareso
-                DialogResult result = MessageBox.Show(
-
-                    "Are you sure you want to delete the entire file?",
-
-                    "Confirm Delete",
-
-                    MessageBoxButtons.YesNo,
-
-                    MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
-
-                {
-
-                    File.Delete("C:\\Users\\hp\\Documents\\c#(C-SHARP)  folder\\pratical files which i created chapter4\\Home Practice.txt");
-
-                    listBox_items_from_thefile.Items.Clear();
-
-                    MessageBox.Show("File deleted successfully.");
-                } 
-
-        }
-    
-
-            else
-
-            {
-
                 MessageBox.Show("File not found.");
+                return;
             }
+
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to delete the entire file?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                File.Delete(filePath);
+
+                listBox_items_from_thefile.Items.Clear();
+
+                MessageBox.Show("File deleted successfully.");
+            }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
