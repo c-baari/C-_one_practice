@@ -1,0 +1,11 @@
+int number = 7;
+
+// Check whether the number is positive or not
+if (number > 0)
+{
+    MessageBox.Show("Positive Number");
+}
+else
+{
+    MessageBox.Show("Not a Positive Number");
+}

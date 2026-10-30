@@ -1,0 +1,12 @@
+int age = 22;
+bool hasID = true;
+//nested if-else
+// First check the age
+if (age >= 18)
+{
+    // Then check whether the person has an ID
+    if (hasID == true)
+    {
+        MessageBox.Show("Access Granted");
+    }
+}

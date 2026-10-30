@@ -1,0 +1,11 @@
+int mark = 85;
+
+// Check the student's mark
+if (mark >= 50)
+{
+    MessageBox.Show("Student Passed");
+}
+else
+{
+    MessageBox.Show("Student Failed");
+}
